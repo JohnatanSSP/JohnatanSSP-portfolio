@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "title": "Aether: Quantum Financial Engine",
+    "description": "Uma plataforma de inteligência financeira espacial com simulação de algoritmos quânticos para balanceamento de portfólios em tempo real, visualizações em 3D de fluxo de ativos e modelagem de risco preditivo.",
+    "image": "/projects/project-1.png",
+    "github": "https://github.com/example/aether-quantum",
+    "demo": "https://aether-quantum-demo.vercel.app",
+    "tags": ["Next.js", "TypeScript", "TailwindCSS", "Zustand", "Framer Motion"],
+    "features": [
+      "Processamento de dados quânticos simulado",
+      "Interface glassmorphism interativa",
+      "Notificações em tempo real com Zustand",
+      "Gráficos de dispersão 3D e mapas de calor de volatilidade"
+    ],
+    "role": "Frontend Architect",
+    "year": "2026"
+  },
+  {
+    "id": 2,
+    "title": "Helios: Space Weather Dashboard",
+    "description": "Dashboard para monitoramento de clima espacial em tempo real, capturando feeds de radiação cósmica, erupções solares e tempestades geomagnéticas diretamente de APIs de agências aeroespaciais.",
+    "image": "/projects/project-2.png",
+    "github": "https://github.com/example/helios-weather",
+    "demo": "https://helios-weather-demo.vercel.app",
+    "tags": ["React", "Next.js 15", "Lucide Icons", "TailwindCSS"],
+    "features": [
+      "Integração com sensores de satélite simulados",
+      "Filtros avançados de radiação de onda curta",
+      "Modo ultra-escuro (Deep Nebula Black)",
+      "Alertas críticos via notificações Web Push"
+    ],
+    "role": "Lead Developer",
+    "year": "2025"
+  },
+  {
+    "id": 3,
+    "title": "Chronos: Spatial Workspace",
+    "description": "Um gerenciador de tarefas espacial inspirado em neumorphism moderno, permitindo arrastar cartões com física simulada, controle de produtividade Pomodoro e notas rápidas com suporte a Markdown.",
+    "image": "/projects/project-3.png",
+    "github": "https://github.com/example/chronos-workspace",
+    "demo": "https://chronos-workspace-demo.vercel.app",
+    "tags": ["Next.js", "TypeScript", "Framer Motion", "TailwindCSS", "Zustand"],
+    "features": [
+      "Sistema Drag and Drop fluido com Framer Motion",
+      "Editor de Markdown embutido com pré-visualização",
+      "Histórico de cronometragem local persistente",
+      "Layout responsivo otimizado para telas sensíveis ao toque"
+    ],
+    "role": "UX/UI Designer & Dev",
+    "year": "2025"
+  },
+  {
+    "id": 4,
+    "title": "Nebula: Cloud Cluster Manager",
+    "description": "Interface futurista para controle de clusters em Kubernetes, oferecendo mapa de nós em tempo real, monitoramento de saúde de pods e log streams interativos diretamente no navegador.",
+    "image": "/projects/project-4.png",
+    "github": "https://github.com/example/nebula-cluster",
+    "demo": "https://nebula-cluster-demo.vercel.app",
+    "tags": ["TypeScript", "Next.js", "TailwindCSS", "Zustand"],
+    "features": [
+      "Streaming de logs via WebSocket emulado",
+      "Visualização radial interativa de nós",
+      "Ações rápidas de escala de réplicas",
+      "Exportação de relatórios de telemetria em JSON/CSV"
+    ],
+    "role": "Fullstack Engineer",
+    "year": "2024"
+  }
+]

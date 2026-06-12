@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Caso de Teste - Integração Webhook de Pagamentos",
+    "category": "QA",
+    "thumbnail": "/works/qa-webhook.png",
+    "description": "Especificação abrangente e roteiro de testes automatizados E2E para validação de fluxos críticos de Webhook de checkout de comércio eletrônico, incluindo tratamentos de erro, retentativas e concorrência.",
+    "date": "Maio 2026",
+    "tags": ["Playwright", "Jest", "QA Automation"],
+    "link": "https://github.com/example/qa-webhook-tests"
+  },
+  {
+    "id": 2,
+    "title": "Pipeline de CI/CD para Kubernetes Multi-Cloud",
+    "category": "DevOps",
+    "thumbnail": "/works/devops-pipeline.png",
+    "description": "Desenvolvimento de um pipeline YAML completo do GitHub Actions para construir imagens Docker leves, realizar linting estático, varredura de vulnerabilidades de segurança (Trivy) e deploy automatizado no EKS.",
+    "date": "Março 2026",
+    "tags": ["GitHub Actions", "Kubernetes", "Docker", "Trivy"],
+    "link": "https://github.com/example/devops-k8s-pipeline"
+  },
+  {
+    "id": 3,
+    "title": "Nebula Design System (Figma Library)",
+    "category": "Design",
+    "thumbnail": "/works/design-nebula.png",
+    "description": "Design system completo inspirado em interfaces espaciais, contendo mais de 50 componentes interativos mapeados com variáveis de cor, estados de hover dinâmicos e tipografia em escala fluida.",
+    "date": "Janeiro 2026",
+    "tags": ["Figma", "Design System", "UI/UX"],
+    "link": "https://figma.com/example/nebula-design-system"
+  },
+  {
+    "id": 4,
+    "title": "Script de Otimização SEO & Performance Next.js",
+    "category": "Ferramentas",
+    "thumbnail": "/works/tool-lighthouse.png",
+    "description": "Script Node.js automatizado para auditar metadados de páginas, otimizar imagens não estruturadas e gerar sitemaps dinâmicos para turbinar a pontuação do Core Web Vitals.",
+    "date": "Outubro 2025",
+    "tags": ["Node.js", "Lighthouse API", "SEO"],
+    "link": "https://github.com/example/lighthouse-booster"
+  },
+  {
+    "id": 5,
+    "title": "Suíte de Testes Unitários de Algoritmos Financeiros",
+    "category": "QA",
+    "thumbnail": "/works/qa-finance.png",
+    "description": "Garantia de qualidade para algoritmos complexos de cálculo de juros compostos sob flutuações cambiais, atingindo 100% de cobertura de código.",
+    "date": "Agosto 2025",
+    "tags": ["Vitest", "QA Testing", "TypeScript"],
+    "link": "https://github.com/example/finance-coverage"
+  }
+]
