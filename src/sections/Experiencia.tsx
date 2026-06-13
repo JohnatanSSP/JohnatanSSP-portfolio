@@ -8,7 +8,7 @@ const experiences = [
   {
     role: 'Analista de Suporte Técnico',
     company: 'SONDA',
-    period: 'Jan 2024 – Mar 2026',
+    period: 'Jan 2025 – Mar 2026',
     description: 'Suporte técnico de software e hardware para equipamentos médicos críticos, garantindo disponibilidade superior a 99% dos sistemas vitais em ambientes de produção.',
     achievements: [
       'Diagnóstico avançado e resolução de falhas em ambientes de produção, reduzindo o MTTR com novos protocolos de documentação técnica',
@@ -31,7 +31,7 @@ const experiences = [
 
 export default function Experiencia() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-8">
       
       {/* Title */}
       <div className="max-w-3xl space-y-4">

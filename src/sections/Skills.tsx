@@ -70,7 +70,7 @@ export default function Skills() {
   const activeCategory = skillCategories.find(cat => cat.id === activeTab) || skillCategories[0];
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-7">
       
       {/* Title */}
       <div className="max-w-3xl space-y-4">

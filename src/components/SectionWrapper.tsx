@@ -50,7 +50,7 @@ export default function SectionWrapper({
         top: `${stickyTop}px`,
         zIndex: index * 10,
       }}
-      className="sticky w-full mb-[20vh] first:mt-6 last:mb-[10vh] pointer-events-auto origin-top"
+      className="sticky w-full mb-[8vh] first:mt-6 last:mb-[5vh] pointer-events-auto origin-top"
     >
       {/* Outer Window Frame */}
       <div className="glass-panel rounded-3xl overflow-hidden flex flex-col shadow-2xl transition-all duration-500 border-color-border-color">
@@ -102,7 +102,7 @@ export default function SectionWrapper({
         </div>
 
         {/* Card Body - Content Area */}
-        <div className="p-6 md:p-10 bg-gradient-to-b from-card-bg to-bg-primary/95 min-h-[50vh] overflow-y-auto max-h-[80vh] relative">
+        <div className="p-6 md:p-8 bg-gradient-to-b from-card-bg to-bg-primary/95 overflow-y-auto relative">
           {/* Decorative background radial lights */}
           <div className="absolute inset-0 bg-bg-glow opacity-30 pointer-events-none" />
           <div className="relative z-10">

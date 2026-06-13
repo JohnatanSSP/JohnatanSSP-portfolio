@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePortfolioStore } from '../lib/store';
 import projectsData from '../data/projects.json';
@@ -131,11 +132,21 @@ export default function Projetos() {
               <div className="space-y-3">
                 {/* Simulated Thumbnail Card Graphic */}
                 <div className="w-full h-24 rounded-lg bg-card-inner border border-border-color/60 flex items-center justify-center relative overflow-hidden group-hover:border-accent/20 transition-colors">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-bg-primary/40" />
-                  
-                  {/* Floating abstract code graphics */}
-                  <Compass size={24} className="text-text-secondary/35 group-hover:text-accent/60 group-hover:scale-110 transition-all duration-300" />
-                  
+                  {project.image ? (
+                    <div className="absolute inset-0">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+                  ) : (
+                    <Compass size={24} className="text-text-secondary/35 group-hover:text-accent/60 group-hover:scale-110 transition-all duration-300" />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-bg-primary/40 pointer-events-none" />
+
                   <div className="absolute bottom-2 left-3 text-[9px] font-mono text-text-secondary/40 select-none tracking-widest uppercase">
                     SYS_BUILD // OK
                   </div>

@@ -8,45 +8,34 @@ import Hero from '../sections/Hero';
 import Sobre from '../sections/Sobre';
 import Skills from '../sections/Skills';
 import Experiencia from '../sections/Experiencia';
-import Projetos from '../sections/Projetos';
-import OutrosTrabalhos from '../sections/OutrosTrabalhos';
+import ProjetosTrabalhos from '../sections/ProjetosTrabalhos';
 import Contato from '../sections/Contato';
-import { Home as HomeIcon, User, Cpu, Briefcase, FolderGit2, Layers, Mail } from 'lucide-react';
+import { Home as HomeIcon, User, Cpu, Briefcase, FolderGit2, Mail } from 'lucide-react';
 
 export default function Page() {
   const { setActiveSection } = usePortfolioStore();
 
-  // Scroll active section tracking via IntersectionObserver
   useEffect(() => {
-    const sectionIds = ['hero', 'sobre', 'skills', 'experiencia', 'projetos', 'trabalhos', 'contato'];
-    
+    const sectionIds = ['hero', 'sobre', 'skills', 'experiencia', 'projetos', 'contato'];
+
     const observers = sectionIds.map((id) => {
       const el = document.getElementById(id);
       if (!el) return null;
 
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id);
-          }
+          if (entry.isIntersecting) setActiveSection(id);
         },
-        {
-          // Triggers section change when the element crosses around the mid-height region of viewport
-          rootMargin: '-30% 0px -55% 0px',
-          threshold: 0,
-        }
+        { rootMargin: '-30% 0px -55% 0px', threshold: 0 }
       );
-      
+
       observer.observe(el);
-      
       return { observer, el };
     });
 
     return () => {
       observers.forEach((item) => {
-        if (item) {
-          item.observer.unobserve(item.el);
-        }
+        if (item) item.observer.unobserve(item.el);
       });
     };
   }, [setActiveSection]);
@@ -56,20 +45,20 @@ export default function Page() {
       {/* Universal Starfield drift space background */}
       <div className="starfield" />
 
-      {/* Floating navigation dock (Desktop left bar, Mobile bottom bar) */}
+      {/* Floating navigation dock */}
       <Navigation />
 
-      {/* Main stacked sections list layout container */}
+      {/* Main stacked sections */}
       <div className="relative max-w-5xl mx-auto px-4 lg:pl-24 lg:pr-8 py-20 flex flex-col gap-0 select-none">
-        
-        {/* Cosmos System Deck Logo Header */}
+
+        {/* Portfolio Logo Header */}
         <div className="flex items-center justify-between mb-8 px-2 select-none">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 rounded-lg bg-accent/20 border border-accent flex items-center justify-center text-[10px] font-bold text-text-primary shadow-[0_0_10px_var(--accent-glow)]">
               Ω
             </div>
             <span className="font-mono text-xs font-black tracking-widest text-text-primary uppercase">
-              COSMOS_DECK
+              JOHNATAN_SSP
             </span>
           </div>
           <div className="text-[10px] font-mono text-text-secondary/50">
@@ -77,74 +66,27 @@ export default function Page() {
           </div>
         </div>
 
-        {/* Stack of Sections wrapped in Browser Frames */}
-        <SectionWrapper 
-          id="hero" 
-          title="hero.tsx" 
-          index={0} 
-          icon={<HomeIcon size={13} />} 
-          urlPath="portfolio.cosmos/home"
-        >
+        <SectionWrapper id="hero" title="hero.tsx" index={0} icon={<HomeIcon size={13} />} urlPath="portfolio.johnatanssp/home">
           <Hero />
         </SectionWrapper>
 
-        <SectionWrapper 
-          id="sobre" 
-          title="sobre.tsx" 
-          index={1} 
-          icon={<User size={13} />} 
-          urlPath="portfolio.cosmos/sobre"
-        >
+        <SectionWrapper id="sobre" title="sobre.tsx" index={1} icon={<User size={13} />} urlPath="portfolio.johnatanssp/sobre">
           <Sobre />
         </SectionWrapper>
 
-        <SectionWrapper 
-          id="skills" 
-          title="skills.tsx" 
-          index={2} 
-          icon={<Cpu size={13} />} 
-          urlPath="portfolio.cosmos/skills"
-        >
+        <SectionWrapper id="skills" title="skills.tsx" index={2} icon={<Cpu size={13} />} urlPath="portfolio.johnatanssp/skills">
           <Skills />
         </SectionWrapper>
 
-        <SectionWrapper 
-          id="experiencia" 
-          title="experiencia.tsx" 
-          index={3} 
-          icon={<Briefcase size={13} />} 
-          urlPath="portfolio.cosmos/experiencia"
-        >
+        <SectionWrapper id="experiencia" title="experiencia.tsx" index={3} icon={<Briefcase size={13} />} urlPath="portfolio.johnatanssp/experiencia">
           <Experiencia />
         </SectionWrapper>
 
-        <SectionWrapper 
-          id="projetos" 
-          title="projetos.tsx" 
-          index={4} 
-          icon={<FolderGit2 size={13} />} 
-          urlPath="portfolio.cosmos/projetos"
-        >
-          <Projetos />
+        <SectionWrapper id="projetos" title="projetos_trabalhos.tsx" index={4} icon={<FolderGit2 size={13} />} urlPath="portfolio.johnatanssp/projetos">
+          <ProjetosTrabalhos />
         </SectionWrapper>
 
-        <SectionWrapper 
-          id="trabalhos" 
-          title="outros_trabalhos.tsx" 
-          index={5} 
-          icon={<Layers size={13} />} 
-          urlPath="portfolio.cosmos/outros-trabalhos"
-        >
-          <OutrosTrabalhos />
-        </SectionWrapper>
-
-        <SectionWrapper 
-          id="contato" 
-          title="contato.tsx" 
-          index={6} 
-          icon={<Mail size={13} />} 
-          urlPath="portfolio.cosmos/contato"
-        >
+        <SectionWrapper id="contato" title="contato.tsx" index={5} icon={<Mail size={13} />} urlPath="portfolio.johnatanssp/contato">
           <Contato />
         </SectionWrapper>
 

@@ -10,7 +10,6 @@ import {
   Cpu, 
   Briefcase, 
   FolderGit2, 
-  Layers, 
   Mail 
 } from 'lucide-react';
 
@@ -20,7 +19,6 @@ const navItems = [
   { id: 'skills', label: 'Skills', icon: Cpu },
   { id: 'experiencia', label: 'Carreira', icon: Briefcase },
   { id: 'projetos', label: 'Projetos', icon: FolderGit2 },
-  { id: 'trabalhos', label: 'Outros', icon: Layers },
   { id: 'contato', label: 'Contato', icon: Mail },
 ];
 

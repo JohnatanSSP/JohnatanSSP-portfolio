@@ -29,7 +29,7 @@ const cardsData = [
 
 export default function Sobre() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-8">
       
       {/* Intro Text */}
       <div className="max-w-3xl space-y-4">
