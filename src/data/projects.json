@@ -1,70 +1,89 @@
 [
   {
     "id": 1,
-    "title": "Aether: Quantum Financial Engine",
-    "description": "Uma plataforma de inteligência financeira espacial com simulação de algoritmos quânticos para balanceamento de portfólios em tempo real, visualizações em 3D de fluxo de ativos e modelagem de risco preditivo.",
+    "title": "E-commerce Full Stack — Zoio Brands",
+    "description": "Desenvolvimento de plataforma de e-commerce completa com catálogo de produtos, carrinho, checkout e integração com APIs de pagamento. Interface responsiva com foco em performance e acessibilidade.",
     "image": "/projects/project-1.png",
-    "github": "https://github.com/example/aether-quantum",
-    "demo": "https://aether-quantum-demo.vercel.app",
-    "tags": ["Next.js", "TypeScript", "TailwindCSS", "Zustand", "Framer Motion"],
+    "github": "https://github.com/johnatanssp",
+    "demo": "https://johnatan-blog-2b20gsgkvjohnatanssp.vercel.app/",
+    "tags": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "Node.js"],
     "features": [
-      "Processamento de dados quânticos simulado",
-      "Interface glassmorphism interativa",
-      "Notificações em tempo real com Zustand",
-      "Gráficos de dispersão 3D e mapas de calor de volatilidade"
+      "Catálogo dinâmico com filtros e busca em tempo real",
+      "Integração com APIs RESTful de pagamento",
+      "SSR e SSG com Next.js para SEO e performance otimizados",
+      "Backend com NestJS, Prisma ORM e PostgreSQL"
     ],
-    "role": "Frontend Architect",
-    "year": "2026"
+    "role": "Front-End Engineer",
+    "year": "2023"
   },
   {
     "id": 2,
-    "title": "Helios: Space Weather Dashboard",
-    "description": "Dashboard para monitoramento de clima espacial em tempo real, capturando feeds de radiação cósmica, erupções solares e tempestades geomagnéticas diretamente de APIs de agências aeroespaciais.",
+    "title": "Landing Pages & Marketing Sites",
+    "description": "Criação e manutenção de landing pages de alta conversão para clientes do estúdio Zoio Brands, com animações suaves, design responsivo e integração com CMSs.",
     "image": "/projects/project-2.png",
-    "github": "https://github.com/example/helios-weather",
-    "demo": "https://helios-weather-demo.vercel.app",
-    "tags": ["React", "Next.js 15", "Lucide Icons", "TailwindCSS"],
+    "github": "https://github.com/johnatanssp",
+    "demo": "https://johnatan-blog-2b20gsgkvjohnatanssp.vercel.app/",
+    "tags": ["React.js", "Next.js", "SASS", "JavaScript", "GraphQL"],
     "features": [
-      "Integração com sensores de satélite simulados",
-      "Filtros avançados de radiação de onda curta",
-      "Modo ultra-escuro (Deep Nebula Black)",
-      "Alertas críticos via notificações Web Push"
+      "Design responsivo e mobile-first",
+      "Integração com GraphQL para conteúdo dinâmico",
+      "Otimização de imagens e Web Core Vitals",
+      "Animações CSS e transições suaves"
     ],
-    "role": "Lead Developer",
-    "year": "2025"
+    "role": "Front-End Developer",
+    "year": "2022"
   },
   {
     "id": 3,
-    "title": "Chronos: Spatial Workspace",
-    "description": "Um gerenciador de tarefas espacial inspirado em neumorphism moderno, permitindo arrastar cartões com física simulada, controle de produtividade Pomodoro e notas rápidas com suporte a Markdown.",
+    "title": "Blog Pessoal & Portfólio",
+    "description": "Portfólio pessoal e blog técnico desenvolvido com Next.js, destacando projetos, artigos e trajetória profissional. Deploy contínuo via Vercel.",
     "image": "/projects/project-3.png",
-    "github": "https://github.com/example/chronos-workspace",
-    "demo": "https://chronos-workspace-demo.vercel.app",
-    "tags": ["Next.js", "TypeScript", "Framer Motion", "TailwindCSS", "Zustand"],
+    "github": "https://github.com/johnatanssp",
+    "demo": "https://johnatan-blog-2b20gsgkvjohnatanssp.vercel.app/",
+    "tags": ["Next.js", "TypeScript", "TailwindCSS"],
     "features": [
-      "Sistema Drag and Drop fluido com Framer Motion",
-      "Editor de Markdown embutido com pré-visualização",
-      "Histórico de cronometragem local persistente",
-      "Layout responsivo otimizado para telas sensíveis ao toque"
+      "Blog com suporte a Markdown",
+      "Deploy automático via Vercel",
+      "SEO otimizado com meta tags dinâmicas",
+      "Layout responsivo para mobile e desktop"
     ],
-    "role": "UX/UI Designer & Dev",
-    "year": "2025"
+    "role": "Fullstack Dev",
+    "year": "2022"
   },
   {
     "id": 4,
-    "title": "Nebula: Cloud Cluster Manager",
-    "description": "Interface futurista para controle de clusters em Kubernetes, oferecendo mapa de nós em tempo real, monitoramento de saúde de pods e log streams interativos diretamente no navegador.",
+    "title": "Aplicação Web com Node.js & PostgreSQL",
+    "description": "API REST robusta com autenticação, gerenciamento de dados e integração de banco de dados relacional, containerizada com Docker para facilitar o deploy.",
     "image": "/projects/project-4.png",
-    "github": "https://github.com/example/nebula-cluster",
-    "demo": "https://nebula-cluster-demo.vercel.app",
-    "tags": ["TypeScript", "Next.js", "TailwindCSS", "Zustand"],
+    "github": "https://github.com/johnatanssp",
+    "demo": "https://github.com/johnatanssp",
+    "tags": ["Node.js", "NestJS", "PostgreSQL", "Docker", "Prisma"],
     "features": [
-      "Streaming de logs via WebSocket emulado",
-      "Visualização radial interativa de nós",
-      "Ações rápidas de escala de réplicas",
-      "Exportação de relatórios de telemetria em JSON/CSV"
+      "API RESTful com autenticação JWT",
+      "Migrations e schema com Prisma ORM",
+      "Containerização com Docker e docker-compose",
+      "Documentação de endpoints com Swagger"
     ],
-    "role": "Fullstack Engineer",
-    "year": "2024"
+    "role": "Backend Developer",
+    "year": "2021"
+  },
+  {
+    "id": 5,
+    "title": "E-commerce Full Stack — Laureen miniSonhos",
+    "description": "Desenvolvimento de plataforma de e-commerce completa com catálogo de produtos, carrinho, checkout e integração com APIs de pagamento. Interface responsiva com foco em performance e acessibilidade.",
+    "image": "/projects/project-1.png",
+    "github": "https://github.com/johnatanssp",
+    "demo": "https://lp-minisonhos.up.railway.app/",
+    "tags": ["Next.js", "React.js", "TypeScript", "TailwindCSS", "Node.js", "Prisma", "PostgreSQL", "Docker"],
+    "features": [
+      "Catálogo dinâmico com filtros e busca em tempo real",
+      "Integração com APIs RESTful de pagamento",
+      "SSR e SSG com Next.js para SEO e performance otimizados",
+      "Backend com NestJS, Prisma ORM e PostgreSQL"
+    ],
+    "role": "Full Stack Developer",
+    "year": "2026"
   }
 ]
+
+  

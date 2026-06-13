@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { Terminal, Send, ArrowRight } from 'lucide-react';
+import { scrollToSection } from '../lib/scrollTo';
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -101,18 +102,7 @@ export default function Hero() {
     };
   }, []);
 
-  const handleScrollTo = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 90;
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
+  const handleScrollTo = (id: string) => scrollToSection(id);
 
   return (
     <div className="relative w-full py-8 px-2 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 min-h-[55vh] overflow-hidden">
@@ -155,7 +145,7 @@ export default function Hero() {
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-text-primary via-text-secondary to-accent glow-text">
-              John Doe
+              Johnatan Paixão
             </span>
           </motion.h1>
           
@@ -165,7 +155,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-xl md:text-2xl font-medium text-text-secondary/80 flex items-center gap-2"
           >
-            Engenheiro de Software & QA Automation
+            Engenheiro Front-End & QA Tester
           </motion.h3>
         </div>
 
@@ -176,9 +166,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-sm md:text-base text-text-secondary max-w-xl leading-relaxed"
         >
-          Especializado na criação de interfaces espaciais ultra-fluidas com Next.js, 
-          arquitetura frontend escalável e sistemas de testes automatizados de alta confiabilidade. 
-          Unindo design moderno e integridade técnica.
+          Especializado na criação de interfaces modernas com Next.js e React, com experiência em e-commerces, plataformas escaláveis e testes de qualidade (QA manual, Smoke Testing e validação funcional). Unindo design responsivo e integridade técnica.
         </motion.p>
 
         {/* Call to Actions (CTAs) */}
@@ -239,7 +227,7 @@ export default function Hero() {
             {/* Graphic Symbol representing space/future */}
             <div className="w-24 h-24 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center relative shadow-[0_0_30px_rgba(147,51,234,0.15)]">
               <span className="text-3xl text-accent font-bold select-none tracking-widest animate-pulse">
-                JD
+                JS
               </span>
               
               {/* Spinning orbit ring */}
@@ -248,7 +236,7 @@ export default function Hero() {
 
             <div className="mt-4 text-center">
               <span className="text-[10px] uppercase font-mono tracking-widest text-text-secondary/70">
-                COSMOS ARCHITECT
+                FRONT-END ENGINEER
               </span>
               <div className="text-xs text-text-primary font-bold mt-1 select-none">
                 SYS_STATUS: READY

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe | Cosmos Space Portfolio",
-  description: "Portfólio interativo de desenvolvimento e automação de testes com interface espacial em glassmorphic browser tabs.",
+  title: "Johnatan Paixão | Front-End Engineer & QA",
+  description: "Portfólio de Johnatan Sousa Silva Paixão — Desenvolvedor Front-End e QA Tester especializado em React, Next.js e TypeScript.",
 };
 
 export default function RootLayout({

@@ -25,9 +25,9 @@ export default function Contato() {
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success'>('idle');
 
   const contactDetails = [
-    { type: 'E-mail', val: 'john.doe@cosmos.com', icon: Mail, action: 'copy' },
-    { type: 'GitHub', val: 'https://github.com/example/johndoe', icon: GithubIcon, action: 'link' },
-    { type: 'LinkedIn', val: 'https://linkedin.com/in/example/johndoe', icon: LinkedinIcon, action: 'link' },
+    { type: 'E-mail', val: 'johnatan.sousa@gmail.com', icon: Mail, action: 'copy' },
+    { type: 'GitHub', val: 'https://github.com/sirpantheon', icon: GithubIcon, action: 'link' },
+    { type: 'LinkedIn', val: 'https://linkedin.com/in/johnatanssp', icon: LinkedinIcon, action: 'link' },
   ];
 
   const handleCopy = (text: string, type: string) => {
@@ -70,7 +70,7 @@ export default function Contato() {
             Conexão Rápida
           </h3>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             {contactDetails.map((contact) => {
               const Icon = contact.icon;
               const isCopy = contact.action === 'copy';
@@ -78,26 +78,28 @@ export default function Contato() {
               return (
                 <div
                   key={contact.type}
-                  className="glass-panel rounded-2xl p-4 border-border-color flex items-center justify-between gap-4 bg-bg-secondary/20 hover:border-accent/20 transition-all group"
+                  className="glass-panel rounded-2xl p-4 border-border-color flex flex-col gap-3 bg-bg-secondary/20 hover:border-accent/20 transition-all group"
                 >
+                  {/* Icon + label + value */}
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-xl bg-accent/10 border border-accent/25 flex items-center justify-center text-accent">
+                    <div className="w-9 h-9 rounded-xl bg-accent/10 border border-accent/25 flex items-center justify-center text-accent shrink-0">
                       <Icon size={16} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <div className="text-[10px] uppercase font-mono tracking-wider text-text-secondary/60 select-none">
                         {contact.type}
                       </div>
-                      <div className="text-xs md:text-sm font-semibold text-text-primary truncate max-w-[170px] md:max-w-[200px]">
+                      <div className="text-xs md:text-sm font-semibold text-text-primary break-all">
                         {isCopy ? contact.val : contact.val.replace('https://', '')}
                       </div>
                     </div>
                   </div>
 
+                  {/* Button on its own line */}
                   {isCopy ? (
                     <button
                       onClick={() => handleCopy(contact.val, contact.type)}
-                      className="h-8 px-3 rounded-lg border border-border-color hover:border-border-hover bg-card-bg/25 text-xs text-text-secondary hover:text-text-primary transition-all cursor-pointer flex items-center gap-1.5 focus:outline-none relative"
+                      className="w-full h-9 px-3 rounded-xl border border-border-color hover:border-accent/40 bg-card-bg/30 text-xs text-text-secondary hover:text-text-primary hover:bg-accent/10 transition-all cursor-pointer flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-accent/30"
                       title={`Copiar ${contact.type}`}
                     >
                       <AnimatePresence mode="wait">
@@ -109,7 +111,7 @@ export default function Contato() {
                             exit={{ scale: 0.8 }}
                             className="flex items-center gap-1.5 text-emerald-400 font-semibold"
                           >
-                            <Check size={12} />
+                            <Check size={13} />
                             <span>Copiado!</span>
                           </motion.span>
                         ) : (
@@ -120,8 +122,8 @@ export default function Contato() {
                             exit={{ scale: 0.8 }}
                             className="flex items-center gap-1.5"
                           >
-                            <Copy size={12} />
-                            <span>Copiar</span>
+                            <Copy size={13} />
+                            <span>Copiar e-mail</span>
                           </motion.span>
                         )}
                       </AnimatePresence>
@@ -131,12 +133,11 @@ export default function Contato() {
                       href={contact.val}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="h-8 px-3 rounded-lg border border-border-color hover:border-border-hover bg-card-bg/25 text-xs text-text-secondary hover:text-text-primary hover:bg-card-bg/50 transition-all flex items-center gap-1.5 focus:outline-none"
+                      className="w-full h-9 px-3 rounded-xl border border-border-color hover:border-accent/40 bg-card-bg/30 text-xs text-text-secondary hover:text-text-primary hover:bg-accent/10 transition-all flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-accent/30"
                     >
-                      <span>Acessar</span>
+                      <span>Acessar {contact.type}</span>
                     </a>
                   )}
-
                 </div>
               );
             })}

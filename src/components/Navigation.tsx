@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { usePortfolioStore } from '../lib/store';
+import { scrollToSection } from '../lib/scrollTo';
 import { 
   Home, 
   User, 
@@ -28,18 +29,7 @@ export default function Navigation() {
 
   const handleScroll = (id: string) => {
     setActiveSection(id);
-    const element = document.getElementById(id);
-    if (element) {
-      // Offset slightly to account for the sticky top height
-      const offset = 90;
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+    scrollToSection(id);
   };
 
   return (

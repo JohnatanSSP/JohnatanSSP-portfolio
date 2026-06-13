@@ -7,23 +7,23 @@ import { Code2, Compass, ShieldCheck, Heart } from 'lucide-react';
 const cardsData = [
   {
     icon: Code2,
-    title: 'Engenharia Limpa',
-    desc: 'Escrevo código legível, tipado e com foco em manutenibilidade. Acredito que a beleza do software reside no que está sob o capô.',
+    title: 'Front-End Moderno',
+    desc: 'Especializado em React.js e Next.js com TypeScript, criando interfaces responsivas e acessíveis para e-commerces, blogs e plataformas web escaláveis.',
   },
   {
     icon: ShieldCheck,
-    title: 'Qualidade Garantida',
-    desc: 'QA não é uma etapa final, é cultura. Automatizar testes unitários, de integração e ponta a ponta (E2E) garante deploys sem atrito.',
+    title: 'QA & Qualidade',
+    desc: 'QA manual, Smoke Testing, criação de casos de teste e documentação de bugs com Jira e TestRail. Garantia de qualidade integrada ao fluxo ágil.',
   },
   {
     icon: Compass,
-    title: 'Exploração & Aprendizado',
-    desc: 'Navego pelas últimas tecnologias para extrair soluções práticas. De Next.js 15 a contêineres Docker robustos.',
+    title: 'Stack Completa',
+    desc: 'Experiência prática com Node.js, NestJS, PostgreSQL, Docker e APIs RESTful/GraphQL — do frontend ao backend.',
   },
   {
     icon: Heart,
     title: 'Foco no Usuário',
-    desc: 'Interfaces premium devem ser acessíveis e fluidas. A experiência do usuário dita a velocidade e interatividade das telas.',
+    desc: 'Interfaces premium devem ser acessíveis e fluidas. Utilizo Figma, Tailwind CSS e SASS para entregar experiências visuais de alta qualidade.',
   },
 ];
 
@@ -37,9 +37,10 @@ export default function Sobre() {
           Sobre Mim
         </h2>
         <p className="text-sm md:text-base text-text-secondary leading-relaxed">
-          Tenho trabalhado com desenvolvimento de software de alta performance, projetando portais web modernos 
-          e automatizando rotinas de validação de qualidade (QA). Minha missão é preencher a lacuna entre 
-          um design esteticamente marcante e sistemas de alta estabilidade técnica.
+          Desenvolvedor Web Front-End e QA Tester com mais de 3 anos de experiência em desenvolvimento de
+          aplicações web modernas, e-commerces e plataformas escaláveis utilizando React, Next.js, JavaScript e
+          TypeScript. Também possuo vivência em suporte técnico e manutenção de sistemas, o que me confere
+          uma visão analítica apurada para resolução de problemas complexos.
         </p>
       </div>
 
@@ -84,10 +85,10 @@ export default function Sobre() {
       {/* Interactive Quick Stats */}
       <div className="glass-panel rounded-2xl p-6 border-border-color grid grid-cols-2 lg:grid-cols-4 gap-6 text-center shadow-lg bg-bg-secondary/40">
         {[
-          { num: '+4 Anos', label: 'Experiência' },
+          { num: '+3 Anos', label: 'Experiência' },
           { num: '50+', label: 'Projetos Entregues' },
-          { num: '250K+', label: 'Linhas de Código' },
-          { num: '99.9%', label: 'Cobertura de QA' },
+          { num: '3+', label: 'Empresas' },
+          { num: '99%+', label: 'Disponibilidade QA' },
         ].map((stat, i) => (
           <motion.div
             key={i}

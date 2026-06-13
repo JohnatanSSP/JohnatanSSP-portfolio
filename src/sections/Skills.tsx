@@ -10,12 +10,11 @@ const skillCategories = [
     label: 'Frontend',
     icon: Layout,
     skills: [
-      { name: 'Next.js 15 / React 19', level: 95 },
-      { name: 'TypeScript', level: 90 },
-      { name: 'Tailwind CSS', level: 95 },
-      { name: 'Framer Motion', level: 85 },
-      { name: 'CSS Variables / Theming', level: 90 },
-      { name: 'State (Zustand/Redux)', level: 85 },
+      { name: 'React.js', level: 90 },
+      { name: 'Next.js', level: 90 },
+      { name: 'TypeScript / JavaScript (ES6+)', level: 88 },
+      { name: 'Tailwind CSS / SASS', level: 90 },
+      { name: 'HTML5 / CSS3', level: 95 },
     ]
   },
   {
@@ -23,35 +22,33 @@ const skillCategories = [
     label: 'Backend',
     icon: Server,
     skills: [
-      { name: 'Node.js / Express', level: 80 },
-      { name: 'Java / Spring Boot', level: 75 },
-      { name: 'PostgreSQL / MongoDB', level: 70 },
-      { name: 'GraphQL / REST APIs', level: 85 },
-      { name: 'WebSockets', level: 75 },
+      { name: 'Node.js / NestJS', level: 75 },
+      { name: 'Java', level: 65 },
+      { name: 'PostgreSQL', level: 70 },
+      { name: 'REST API / GraphQL', level: 82 },
+      { name: 'Prisma ORM', level: 72 },
     ]
   },
   {
     id: 'qa',
-    label: 'QA & Automação',
+    label: 'QA & Testes',
     icon: ClipboardCheck,
     skills: [
-      { name: 'Playwright', level: 95 },
-      { name: 'Cypress', level: 90 },
-      { name: 'Jest / Vitest', level: 90 },
-      { name: 'Automação de API (Supertest)', level: 85 },
-      { name: 'Testes de Regressão Visual', level: 80 },
+      { name: 'QA Manual / Smoke Testing', level: 85 },
+      { name: 'Test Cases & Bug Report', level: 88 },
+      { name: 'TestRail', level: 80 },
+      { name: 'Testes de Regressão', level: 82 },
+      { name: 'Jira', level: 85 },
     ]
   },
   {
     id: 'devops',
-    label: 'DevOps & Nuvem',
+    label: 'DevOps & Infra',
     icon: Infinity,
     skills: [
-      { name: 'Docker', level: 85 },
-      { name: 'Kubernetes', level: 70 },
-      { name: 'AWS (S3, EC2, CloudFront)', level: 75 },
-      { name: 'GitHub Actions / CI-CD', level: 90 },
-      { name: 'Linux OS / Shell Scripting', level: 80 },
+      { name: 'Docker', level: 75 },
+      { name: 'Git / GitHub', level: 92 },
+      { name: 'Scrum / Metodologias Ágeis', level: 85 },
     ]
   },
   {
@@ -59,11 +56,10 @@ const skillCategories = [
     label: 'Ferramentas',
     icon: Wrench,
     skills: [
-      { name: 'Git & GitHub Flow', level: 95 },
-      { name: 'Figma (UI/UX Review)', level: 80 },
-      { name: 'Postman / Insomnia', level: 90 },
-      { name: 'SonarQube (Code Quality)', level: 85 },
-      { name: 'Jira / Agile Workflows', level: 85 },
+      { name: 'Postman', level: 85 },
+      { name: 'Figma', level: 78 },
+      { name: 'VS Code', level: 95 },
+      { name: 'Jira / TestRail', level: 85 },
     ]
   }
 ];

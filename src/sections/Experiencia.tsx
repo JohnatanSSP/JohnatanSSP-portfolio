@@ -6,36 +6,25 @@ import { Calendar, Briefcase, Award } from 'lucide-react';
 
 const experiences = [
   {
-    role: 'Engenheiro de Software & QA Automation',
-    company: 'Cosmos Solutions',
-    period: '2024 - Presente',
-    description: 'Liderança na arquitetura de aplicações Next.js e estruturação de rotinas completas de QA. Integração de microsserviços e redução de erros em ambiente produtivo utilizando frameworks modernos de asserção.',
+    role: 'Analista de Suporte Técnico',
+    company: 'SONDA',
+    period: 'Jan 2024 – Mar 2026',
+    description: 'Suporte técnico de software e hardware para equipamentos médicos críticos, garantindo disponibilidade superior a 99% dos sistemas vitais em ambientes de produção.',
     achievements: [
-      'Redução de 75% no tempo de testes manuais com automação de ponta a ponta (Playwright)',
-      'Otimização de Web Vitals, alcançando escores acima de 95 em mobile',
-      'Criação de micro-frontends modulares compartilhados entre múltiplos clusters'
+      'Diagnóstico avançado e resolução de falhas em ambientes de produção, reduzindo o MTTR com novos protocolos de documentação técnica',
+      'Interface técnica entre clientes finais e time de engenharia, traduzindo falhas operacionais em requisitos de correção de software',
+      'Suporte a sistemas de alta criticidade com foco em continuidade e estabilidade operacional'
     ]
   },
   {
-    role: 'Desenvolvedor Frontend Pleno',
-    company: 'Nebula Tech',
-    period: '2022 - 2024',
-    description: 'Implementação de interfaces responsivas em React com foco em design dinâmico e consumo de APIs RESTful estruturadas.',
+    role: 'Front-End Software Engineer Junior',
+    company: 'Zoio Brands – Design Studio',
+    period: 'Jan 2020 – Abr 2023',
+    description: 'Desenvolvimento e manutenção de aplicações web estáticas e dinâmicas, e-commerces e blogs, com foco em performance e responsividade em projetos ágeis.',
     achievements: [
-      'Migração de portal legado para Next.js App Router, diminuindo First Contentful Paint em 40%',
-      'Criação de biblioteca de componentes Tailwind CSS compartilhada via NPM privado',
-      'Configuração de pipelines de integração contínua (CI/CD) integrando lints e Jest'
-    ]
-  },
-  {
-    role: 'Desenvolvedor Frontend Júnior',
-    company: 'Stellar Corp',
-    period: '2021 - 2022',
-    description: 'Manutenção de websites corporativos, landing pages promocionais e suporte em testes de acessibilidade.',
-    achievements: [
-      'Ajustes de acessibilidade (WCAG AA) em portais institucionais de alto tráfego',
-      'Refatoração de CSS legado para utilitários modulares Tailwind CSS',
-      'Colaboração próxima com equipes de design de produto utilizando Figma'
+      'Criação de websites, landing pages, e-commerces e blogs usando React.js, Next.js e TypeScript',
+      'Integração com APIs RESTful e GraphQL para consumo de dados',
+      'Experiência backend com Node.js, Prisma ORM, PostgreSQL, Docker e NestJS'
     ]
   }
 ];
@@ -50,7 +39,7 @@ export default function Experiencia() {
           Trajetória Profissional
         </h2>
         <p className="text-sm md:text-base text-text-secondary leading-relaxed">
-          Minha carreira em desenvolvimento de software e controle de qualidade, construindo sistemas estáveis e interfaces de usuário fluidas.
+          Minha trajetória em desenvolvimento front-end e suporte técnico, construindo interfaces modernas e garantindo a qualidade dos sistemas.
         </p>
       </div>
 
