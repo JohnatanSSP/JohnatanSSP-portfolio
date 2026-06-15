@@ -133,15 +133,12 @@ export default function Projetos() {
                 {/* Simulated Thumbnail Card Graphic */}
                 <div className="w-full h-24 rounded-lg bg-card-inner border border-border-color/60 flex items-center justify-center relative overflow-hidden group-hover:border-accent/20 transition-colors">
                   {project.image ? (
-                    <div className="absolute inset-0">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                      />
-                    </div>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="absolute inset-0 h-full w-full object-cover"
+                      loading="lazy"
+                    />
                   ) : (
                     <Compass size={24} className="text-text-secondary/35 group-hover:text-accent/60 group-hover:scale-110 transition-all duration-300" />
                   )}
